@@ -1,0 +1,185 @@
+/* This is to fix bootstrap and reveal mix issue */
+[hidden] {
+  display: inherit !important;
+}
+/****/
+
+/** Important for modal manipulation **/
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 1300px;
+    margin: 1.75rem auto;
+  }
+}
+modal,
+references {
+  display: none;
+}
+@font-face {
+  font-family: "Gotham-Book";
+  src: url(./assets/Gotham-Book.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Gotham-Bold";
+  src: url(./assets/Gotham-Bold.ttf);
+  font-weight: normal;
+}
+
+/** **/
+
+.font-r {
+  font-family: "Gotham-Book" !important;
+}
+
+.font-b {
+  font-family: "Gotham-Bold" !important;
+}
+
+* {
+  color: #00b2b0;
+  font-family: "Roboto", Helvetica, sans-serif !important;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  font-weight: 400 !important;
+}
+.btn-primary {
+  background-color: #00b2b0 !important;
+  border-color: #027472 !important;
+}
+strong {
+  font-weight: 900 !important;
+}
+
+.btn-lg {
+  font-size: 1.8rem !important;
+}
+.btn {
+  border-radius: 15px !important;
+}
+/* The Overlay (background) */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  transition: 0.5s;
+  -webkit-box-shadow: 7px 0px 16px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 0px 16px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 0px 16px -6px rgba(0, 0, 0, 0.75);
+}
+.overlay-content {
+  position: relative;
+  top: 15%;
+  margin-bottom: 30px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.modal-dialog {
+  width: 90%;
+}
+.secondary-overlay-content {
+  position: relative;
+  top: 5%;
+  margin-top: 30px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 57px;
+  height: 5px;
+  margin: 11px;
+  background-color: var(--color) !important;
+  transition: all 0.4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-10px, 12px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-10px, -12px);
+}
+
+#menu-btn {
+  --color: #00b2b0;
+  position: fixed;
+  top: 45px;
+  left: 20px;
+  z-index: 1000;
+  border: none;
+  background-color: transparent;
+  border: 5px solid var(--color);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  outline: none;
+}
+
+#secondary-menu-btn {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 1000;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 120px;
+  height: 120px;
+}
+
+#close-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1000;
+  border: none;
+  border-radius: 50% !important;
+  width: 14%;
+  height: 15%;
+  background-color: transparent !important;
+  transition: all 0.2s;
+  outline: none !important;
+}
+#close-btn:hover {
+  filter: brightness(0.5);
+  bottom: 75px;
+}
+
+sup,
+sub {
+  font-family: "Roboto" !important;
+  font-size: 70%;
+}
+
+.transform-no {
+  transform: none !important;
+}
+.inset-no {
+  inset: unset !important;
+}
+section {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+small {
+  font-size: 20px;
+}
